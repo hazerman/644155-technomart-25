@@ -9,10 +9,15 @@
       <div class="header-in-header">
         <a class="main-header-logo">
           <img src="img/logo.svg" width="108" height="18" alt="Логотип Техномарта"></a>
-        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17">
-          <path fill="#FFF" d="M17 15.586l-3.542-3.542C14.421 10.782 15 9.21 15 7.5 15 3.358 11.643 0 7.5 0 3.358 0 0 3.358 0 7.5 0 11.643 3.358 15 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5C4.467 13 2 10.532 2 7.5z"/>
-        </svg>
-        <!--   Здесь поле поиска, лэйбл будет с svg связан, svg инлайновое т.к цвет придется менять на красный     -->
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <label for="search">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17">
+              <path fill="#FFF" d="M17 15.586l-3.542-3.542C14.421 10.782 15 9.21 15 7.5 15 3.358 11.643 0 7.5 0 3.358 0 0 3.358 0 7.5 0 11.643 3.358 15 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5C4.467 13 2 10.532 2 7.5z"/>
+            </svg>
+            Поиск:
+          </label>
+          <input type="search" name="main-search" id="search">
+        </form>
         <a class="tabs" href="#">Закладки:</a>
         <a class="cart" href="#">Корзина:</a>
         <a class="btn-checkout" href="#">Оформить заказ</a>
@@ -21,7 +26,7 @@
         <p class="main-description">
           Интернет-магазин строительных материалов и инструментов для ремонта
         </p>
-        <span class="telephone-number-header">
+        <span class="telephone-number-header" aria-label="Номер телефона">
           +7 (812) 555-05-55
         </span>
         <p class="address-header">
@@ -235,10 +240,33 @@
           Вы можете забрать товар сами,<br>
           заехав в наш офис:
         </p>
-        <a class="map-link" href="#">
-          <img src="img/map.jpg" width="300" height="158" alt="Как к нам проехать">
-        </a>
+        <button class="map-button" type="button">
+          <img src="img/map.jpg" width="300" height="158" alt="Наш адрес: ул. Конюшенная 19, г. Санкт-петербург">
+        </button>
+        <div class="modal modal-map">
+          <img src="img/map-large.jpg" width="940" height="446" alt="Наш адрес: ул. Конюшенная 19, г. Санкт-петербург">
+          <button class="close-button" type="button">
+            <img src="img/icon-close.svg" width="21" height="21" alt="Закрыть карту">
+          </button>
+        </div>
         <a class="button" href="#" style="display: block">Заблудились? Напишите нам!</a> <!--  Стиль временно, чтобы две ссылки не сливались    -->
+        <section class="modal modal-form" >
+          <form class="appeal-form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset>
+              <legend class="visually-hidden">Форма обращения</legend>
+              <label for="name">Ваше имя:</label>
+              <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+              <label for="email">Ваш e-mail:</label>
+              <input type="email" name="email" id="email" placeholder="email@example.com">
+              <label for="appeal">Текст письма:</label>
+              <textarea name="appeal" id="appeal" placeholder="В свободной форме"></textarea>
+              <button class="button" type="submit">Отправить</button>
+            </fieldset>
+          </form>
+          <button class="close-button" type="button">
+            <img src="img/icon-close.svg" width="21" height="21" alt="Закрыть карту">
+          </button>
+        </section>
       </section>
     </main>
     <footer>
