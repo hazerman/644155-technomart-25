@@ -75,6 +75,18 @@
       <section class="filters">
         <h2>Фильтр:</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="filter-price">
+            <legend>Цена:</legend>
+            <div class="range-field">
+              <a href="#" class="filter-button">Меньшее значение</a>
+              <div class="filter-range-transparent-line"></div>
+              <div class="filter-range-above-line"></div>
+              <a href="#" class="filter-button">Большее значение</a>
+            </div>
+            <input class="input-range" type="text" name="min-price" id="min-price">
+            -
+            <input class="input-range" type="text" name="max-price" id="max-price">
+          </fieldset>
           <fieldset class="filter-brands">
             <legend>Производители:</legend>
             <input type="checkbox" name="check-bosch" id="bosch">
@@ -97,6 +109,14 @@
           </fieldset>
           <button class="button btn-show" type="submit">Показать</button>
         </form>
+        <div class="sorting">
+          <h2>Сортировка:</h2>
+          <a class="sorting-category" href="#">По цене</a>
+          <a class="sorting-category" href="#">По типу</a>
+          <a class="sorting-category" href="#">По функционалу</a>
+          <a class="sorting-category arrow arrow-up" href="#">По возрастанию</a>
+          <a class="sorting-category arrow arrow-down" href="#">По убыванию</a>
+        </div>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список перфораторов</h2>
