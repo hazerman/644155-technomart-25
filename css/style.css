@@ -12,6 +12,16 @@ a {
   text-decoration: none;
 }
 
+.button {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+  border: none;
+}
+
 .header-in-header {
   font-size: 17px;
   line-height: 18px;
@@ -20,7 +30,10 @@ a {
   background-color: #293449;
 }
 
-.main-header-logo {
+.main-header-logo,
+.footer-logo {
+  display: inline-block;
+
   background-color: #ee3643;
   box-shadow: 0 -5px 0 0 rgba(0, 0, 0, 0.24) inset;
 }
@@ -107,4 +120,77 @@ input[type="search"]::-moz-input-placeholder {
 
 .site-navigation a {
   color: #ffffff;
+}
+
+.about-company h2,
+.contacts h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.about-company p,
+.contacts p {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
+}
+
+.delivery-companies {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+
+  list-style: none;
+}
+
+.map-button {
+  background-color: #f4f2ed;
+  border: none;
+}
+
+.main-footer {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+
+  background-color: #32425c;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.footer-navigation a {
+  color: #ffffff;
+}
+
+.addres-telephone-in-footer {
+  font-style: normal;
+}
+
+.promo-list-in-footer a {
+  color: #ffd180;
+}
+
+.footer-in-footer {
+  font-size: 16px;
+  line-height: 18px;
+
+  background-color: #293449;
+}
+
+.social-button {
+  color: #ffffff;
+
+  background-color: #212a3a;
+}
+
+.footer-copyright a {
+  color: #ffd180;
+}
+
+.modal {
+  display: none;
 }
