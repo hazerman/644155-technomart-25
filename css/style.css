@@ -151,6 +151,10 @@ input[type="search"]:focus {
   color: #000000;
 }
 
+.user-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .user-navigation-if-logged {
   font-size: 16px;
   line-height: 18px;
@@ -164,6 +168,15 @@ input[type="search"]:focus {
 .user-navigation-if-logged a {
   color: #32425c;
   text-decoration: underline;
+}
+
+.user-navigation-if-logged a:hover,
+.user-navigation-if-logged a:focus {
+  color: #ee3643;
+}
+
+.user-navigation-if-logged a:active {
+  color: rgba(50, 66, 92, 0.3);
 }
 
 .user-navigation,
@@ -192,11 +205,18 @@ svg .login-icon-fill {
   fill: #c5c5c5;
 }
 
-.login-link:hover .login-icon-fill {
+.login-link:hover .login-icon-fill,
+.user-name:hover .login-icon-fill,
+.log-out:hover .login-icon-fill,
+.login-link:focus .login-icon-fill,
+.user-name:focus .login-icon-fill,
+.log-out:focus .login-icon-fill {
   fill: #32425c;
 }
 
-.login-link:active .login-icon-fill {
+.login-link:active .login-icon-fill,
+.user-name:active .login-icon-fill,
+.log-out:active .login-icon-fill {
   fill: #c5c5c5;
 }
 
@@ -294,11 +314,13 @@ svg .login-icon-fill {
   font-family: "PT Sans", "Arial", sans-serif;
   text-align: center;
 
+  border: 1px solid #e5e5e5;
   list-style: none;
 }
 
-.catalog-item {
-  border: 1px solid #e5e5e5;
+.catalog-item:hover {
+  border: none;
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .catalog-item h3 {
@@ -332,11 +354,34 @@ svg .login-icon-fill {
   box-shadow: 0 -3px 0 0 #367315 inset;
 }
 
+.btn-buy:hover,
+.btn-buy:focus {
+  background-color: #5fbb2d;
+}
+
+.btn-buy:active {
+  background-color: #518534;
+  outline: none;
+}
+
 .btn-tabs {
-  color: #000000;
+  color: #32425c;
 
   background-color: transparent;
   border: 3px solid #63a63e;
+}
+
+.btn-tabs:hover,
+.btn-tabs:focus {
+  color: #32425c;
+
+  background-color: transparent;
+  border-color: #32425c;
+}
+
+.btn-tabs:active {
+  opacity: 0.3;
+  outline: none;
 }
 
 .about-company h2,
@@ -421,6 +466,12 @@ svg .login-icon-fill {
   color: #ffffff;
 
   background-color: #212a3a;
+}
+
+.social-button:hover,
+.social-button:focus,
+.social-button:active {
+  background-color: #ee3643;
 }
 
 .footer-copyright a {
