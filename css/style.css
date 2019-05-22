@@ -215,6 +215,55 @@ input[type="search"]::-moz-input-placeholder {
   border: 1px solid #e5e5e5;
 }
 
+.catalog-item {
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-align: center;
+
+  list-style: none;
+}
+
+.catalog-item {
+  border: 1px solid #e5e5e5;
+}
+
+.catalog-item h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.old-price,
+.price {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.price {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #ee3643;
+}
+
+.btn-buy,
+.btn-tabs {
+  font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.btn-buy {
+  background-color: #63a63e;
+  box-shadow: 0 -3px 0 0 #367315 inset;
+}
+
+.btn-tabs {
+  color: #000000;
+
+  background-color: transparent;
+  border: 3px solid #63a63e;
+}
+
 .about-company h2,
 .contacts h2 {
   font-size: 30px;
