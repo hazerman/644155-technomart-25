@@ -22,6 +22,15 @@ a {
   border: none;
 }
 
+.button:hover,
+.button:focus {
+  background-color: #ca2c37;
+}
+
+.button:active {
+  background-color: #ba2732;
+}
+
 .header-in-header {
   font-size: 17px;
   line-height: 18px;
@@ -62,10 +71,44 @@ input[type="search"]::-moz-input-placeholder {
   background-color: #293449;
 }
 
+input[type="search"]:hover,
+.tabs:hover,
+.cart:hover,
+.tabs:focus,
+.cart:focus {
+  background-color: #212a3a;
+}
+
+.tabs:active,
+.cart:active {
+  background-color: #161d29;
+  opacity: 0.6;
+}
+
+input[type="search"]:focus {
+  background-color: #ffffff;
+  outline: none;
+}
+
+.search-icon:hover {
+  background-color: #212a3a;
+  opacity: 1;
+}
+
 .btn-checkout {
   color: #ffffff;
 
   background-color: #63a63e;
+}
+
+.btn-checkout:hover,
+.btn-checkout:focus {
+  background-color: #5fbb2d;
+}
+
+.btn-checkout:active {
+  background-color: #518534;
+  opacity: 0.5;
 }
 
 .footer-in-header {
@@ -136,6 +179,27 @@ input[type="search"]::-moz-input-placeholder {
   background-color: #ffffff;
 }
 
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #ee3643;
+}
+
+.user-navigation a:active {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+svg .login-icon-fill {
+  fill: #c5c5c5;
+}
+
+.login-link:hover .login-icon-fill {
+  fill: #32425c;
+}
+
+.login-link:active .login-icon-fill {
+  fill: #c5c5c5;
+}
+
 .main-navigation {
   font-size: 17px;
   line-height: 17px;
@@ -147,6 +211,17 @@ input[type="search"]::-moz-input-placeholder {
 
 .site-navigation a {
   color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #293449;
+}
+
+.site-navigation a:active {
+  color: rgba(255, 255, 255, 0.5);
+
+  background-color: #1d2739;
 }
 
 .technomart-nav {
@@ -308,12 +383,31 @@ input[type="search"]::-moz-input-placeholder {
   color: #ffffff;
 }
 
-.addres-telephone-in-footer {
-  font-style: normal;
-}
-
 .promo-list-in-footer a {
   color: #ffd180;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus,
+.promo-list-in-footer a:hover,
+.promo-list-in-footer a:focus,
+.footer-copyright a:hover,
+.footer-copyright a:focus {
+  text-decoration: underline;
+}
+
+.footer-navigation a:active {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.promo-list-in-footer a:active {
+  color: rgba(255, 209, 128, 0.5);
+  text-decoration: none;
+}
+
+.address-telephone-in-footer {
+  font-style: normal;
 }
 
 .footer-in-footer {
@@ -331,6 +425,11 @@ input[type="search"]::-moz-input-placeholder {
 
 .footer-copyright a {
   color: #ffd180;
+}
+
+.footer-copyright a:active {
+  color: #ee3643;
+  text-decoration: none;
 }
 
 .modal {
