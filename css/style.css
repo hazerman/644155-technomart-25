@@ -48,12 +48,12 @@ a {
   box-shadow: 0 -5px 0 0 rgba(0, 0, 0, 0.24) inset;
 }
 
-.main-header-logo:hover,
-.main-header-logo:focus {
+a.main-header-logo:hover,
+a.main-header-logo:focus {
   background-color: #ca2c37;
 }
 
-.main-header-logo:active {
+a.main-header-logo:active {
   background-color: #ba2732;
 }
 
@@ -294,6 +294,7 @@ svg .login-icon-fill {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
+  text-transform: uppercase;
   color: #ffffff;
 
   background-color: #3a241f;
@@ -675,6 +676,30 @@ svg .login-icon-fill {
 .footer-copyright a:active {
   color: #ee3643;
   text-decoration: none;
+}
+
+[class*="current-in-"] {
+  pointer-events: none;
+  cursor: default;
+}
+
+a.current-in-services {
+  color: #32425c;
+
+  background-color: #ffffff;
+  box-shadow: none;
+}
+
+a.current-in-sorting {
+  color: #ee3643;
+  text-decoration: none;
+}
+
+a.current-in-pagination {
+  color: #ffffff;
+
+  background-color: #ee3643;
+  border: none;
 }
 
 .modal {
