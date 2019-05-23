@@ -347,6 +347,7 @@ svg .login-icon-fill {
 }
 
 .filters h2 {
+  font-weight: normal;
   font-size: 13px;
   line-height: 18px;
 
