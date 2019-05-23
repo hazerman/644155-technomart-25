@@ -20,6 +20,7 @@ a {
 
   background-color: #ee3643;
   border: none;
+  border-radius: 1px;
 }
 
 .button:hover,
@@ -45,6 +46,15 @@ a {
 
   background-color: #ee3643;
   box-shadow: 0 -5px 0 0 rgba(0, 0, 0, 0.24) inset;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+  background-color: #ca2c37;
+}
+
+.main-header-logo:active {
+  background-color: #ba2732;
 }
 
 .search-icon {
@@ -273,6 +283,63 @@ svg .login-icon-fill {
   background-color: #f3f7f8;
 }
 
+.promolist h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.promo-slider h3 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+
+  background-color: #3a241f;
+}
+
+.promo-slider p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+
+  background-color: #3a241f;
+}
+
+.btn-in-promo {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.btn-in-promo:hover,
+.btn-in-promo:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn-in-promo:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.materials {
+  background-color: #ffbf47;
+}
+
+.instrument {
+  background-color: #3bbce3;
+}
+
+.tech {
+  background-color: #dc91d8;
+}
+
+.sale {
+  background-color: #8ed78f;
+}
+
+.delivery {
+  background-color: #ffc047;
+}
+
 .filters {
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
@@ -281,6 +348,9 @@ svg .login-icon-fill {
 .filters h2 {
   font-size: 13px;
   line-height: 18px;
+
+  background-color: #f7f3ec;
+  border-radius: 1px;
 }
 
 .filter-form legend {
@@ -300,6 +370,35 @@ svg .login-icon-fill {
 
 .filter-form fieldset:not(:first-of-type) {
   border-top: 1px solid #e5e5e5;
+}
+
+.range-field {
+  width: 220px;
+  height: 80px;
+}
+
+.input-range,
+.range-field {
+  background-color: #f7f3ec;
+  border: none;
+  border-radius: 1px;
+}
+
+.sorting-category {
+  font-size: 13px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #ee3643;
+}
+
+.sorting-category:hover,
+.sorting-category:focus {
+  color: #000000;
+
+  text-decoration-style: solid;
 }
 
 .btn-show {
@@ -384,19 +483,114 @@ svg .login-icon-fill {
   outline: none;
 }
 
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 1px;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  border-color: #bdc6ca;
+}
+
+.pagination-item a:active {
+  border-color: #ee3643;
+}
+
+.popular-products-and-brands h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+
+  background-color: #f9f5f0;
+}
+
+.brand-logo {
+  list-style: none;
+}
+
+.brand-link {
+  border: 1px solid #e5e5e5;
+}
+
+.brand-link:hover,
+.brand-link:focus {
+  border: none;
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.brand-link:active {
+  box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
+}
+
+.brand-link:active img {
+  opacity: 0.3;
+}
+
+.services {
+  background-color: #f4f8fa;
+}
+
+.features {
+  background-color: #f2f6f8;
+}
+
+.services h2,
 .about-company h2,
-.contacts h2 {
+.contacts h2,
+.features h2 {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+  text-transform: uppercase;
 }
 
+.services h3 {
+  font-size: 36px;
+  line-height: 24px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.services p,
 .about-company p,
-.contacts p {
+.contacts p,
+.features p {
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-list a {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: #ffffff;
+
+  background-color: #32425c;
+  box-shadow:
+    0 1px 0 0 #405069 inset,
+    0 -1px 0 0 #293449 inset;
+}
+
+.services-list a:hover,
+.services-list a:focus {
+  background-color: #293449;
 }
 
 .delivery-companies {
