@@ -283,19 +283,19 @@ svg .login-icon-fill {
   background-color: #f3f7f8;
 }
 
-.promolist h3 {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
+.promo {
   color: #ffffff;
 }
 
+.promolist h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
 .promo-slider h3 {
-  font-weight: bold;
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #ffffff;
 
   background-color: #3a241f;
 }
@@ -303,7 +303,6 @@ svg .login-icon-fill {
 .promo-slider p {
   font-size: 18px;
   line-height: 24px;
-  color: #ffffff;
 
   background-color: #3a241f;
 }
@@ -425,7 +424,6 @@ svg .login-icon-fill {
 }
 
 .catalog-item h3 {
-  font-weight: bold;
   font-size: 18px;
   line-height: 20px;
 }
@@ -462,6 +460,7 @@ svg .login-icon-fill {
 
 .btn-buy:active {
   background-color: #518534;
+  box-shadow: none;
   outline: none;
 }
 
