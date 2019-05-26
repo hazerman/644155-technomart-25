@@ -207,6 +207,9 @@ input[type="search"]:focus {
 
 .user-navigation,
 .site-navigation {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -291,6 +294,9 @@ svg .login-icon-fill {
 }
 
 .page-title {
+  padding: 28px;
+  margin-bottom: 20px;
+
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
@@ -356,18 +362,44 @@ svg .login-icon-fill {
   background-color: #ffc047;
 }
 
+.filters-and-catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
 .filters {
+  width: 220px;
+}
+
+.catalog-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+
+.filters,
+.sorting {
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 }
 
-.filters h2 {
+.filters h2,
+.sorting h2 {
+  margin: 0;
+  padding: 11px 18px;
+
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
 
   background-color: #f7f3ec;
   border-radius: 1px;
+}
+
+.filter-form fieldset{
+  margin: 0;
+  padding: 0;
+
 }
 
 .filter-form legend {
@@ -390,8 +422,18 @@ svg .login-icon-fill {
 }
 
 .range-field {
+  margin-bottom: 9px;
   width: 220px;
   height: 80px;
+}
+
+.input-range {
+  box-sizing: border-box;
+  padding: 11px;
+  width: 95px;
+  height: 38px;
+
+  text-align: center;
 }
 
 .input-range,
@@ -426,12 +468,28 @@ svg .login-icon-fill {
   border: 1px solid #e5e5e5;
 }
 
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
 .catalog-item {
+  width: 220px;
+  margin-top: 20px;
+  margin-right: 20px;
+  box-sizing: border-box;
+
   font-family: "PT Sans", "Arial", sans-serif;
   text-align: center;
 
   border: 1px solid #e5e5e5;
   list-style: none;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-item:hover {
