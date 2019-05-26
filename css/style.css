@@ -32,12 +32,28 @@ a {
   background-color: #ba2732;
 }
 
+.main-header {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+
+  background-color: #f3f7f8;
+}
+
 .header-in-header {
+  width: 100%;
+  margin-bottom: 46px;
+
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
 
   background-color: #293449;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
 }
 
 .main-header-logo,
@@ -122,7 +138,7 @@ input[type="search"]:focus {
 }
 
 .footer-in-header {
-  background-color: #f3f7f8;
+  margin-bottom: 43px;
 }
 
 .main-description {
@@ -594,6 +610,20 @@ svg .login-icon-fill {
   background-color: #293449;
 }
 
+.about-and-contacts-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 86px;
+}
+
+.about-company {
+  width: 540px;
+}
+
+.contacts {
+  width: 300px;
+}
+
 .delivery-companies {
   font-size: 18px;
   line-height: 20px;
@@ -603,11 +633,19 @@ svg .login-icon-fill {
 }
 
 .map-button {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 158px;
+
   background-color: #f4f2ed;
   border: none;
 }
 
 .main-footer {
+  display: flex;
+  flex-direction: column;
+
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
@@ -615,12 +653,27 @@ svg .login-icon-fill {
   background-color: #32425c;
 }
 
+.header-in-footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .main-footer ul {
   list-style: none;
 }
 
+.footer-navigation {
+  width: 550px;
+}
+
 .footer-navigation a {
   color: #ffffff;
+}
+
+.promo-list-in-footer {
+  width: 530px;
 }
 
 .promo-list-in-footer a {
@@ -650,11 +703,23 @@ svg .login-icon-fill {
   font-style: normal;
 }
 
+.footer-in-footer .container {
+  display: flex;
+}
+
 .footer-in-footer {
   font-size: 16px;
   line-height: 18px;
 
   background-color: #293449;
+}
+
+.footer-copyright {
+  margin-right: 20px;
+}
+
+.footer-social-list {
+  margin: 0 auto;
 }
 
 .social-button {
@@ -705,3 +770,12 @@ a.current-in-pagination {
 .modal {
   display: none;
 }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
