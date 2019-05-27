@@ -306,27 +306,72 @@ svg .login-icon-fill {
 }
 
 .promo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  padding-top: 59px;
+  margin-bottom: 53px;
+
   color: #ffffff;
 }
 
+.promolist {
+  margin-bottom: 20px;
+
+  width: 300px;
+  height: 123px;
+}
+
+.sales-and-delivery-wrapper .promolist:last-child {
+  margin-bottom: 0;
+}
+
 .promolist h3 {
+  margin: 0;
+  padding: 0;
+
   font-size: 24px;
   line-height: 30px;
 }
 
-.promo-slider h3 {
-  font-size: 36px;
-  line-height: 36px;
-  text-transform: uppercase;
+.promo-slider {
+  position: relative;
+
+  width: 620px;
+  height: 266px;
 
   background-color: #3a241f;
 }
 
+.promo-slider h3 {
+  position: absolute; /*временно без четкой позиции*/
+
+  margin: 0;
+  padding: 0;
+
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
 .promo-slider p {
+  position: absolute; /*временно без четкой позиции*/
+
   font-size: 18px;
   line-height: 24px;
+}
 
-  background-color: #3a241f;
+.promo-slider .button {
+  position: absolute; /*временно без четкой позиции*/
+  top: 0;
+}
+
+/*временно*/
+.drill.promo-slider,
+.btn-prev,
+.btn-next {
+  display: none;
 }
 
 .btn-in-promo {
@@ -471,15 +516,15 @@ svg .login-icon-fill {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
 
 .catalog-item {
+  box-sizing: border-box;
   width: 220px;
   margin-top: 20px;
-  margin-right: 20px;
-  box-sizing: border-box;
 
   font-family: "PT Sans", "Arial", sans-serif;
   text-align: center;
@@ -488,8 +533,8 @@ svg .login-icon-fill {
   list-style: none;
 }
 
-.catalog-item:nth-child(3n) {
-  margin-right: 0;
+.in-index .catalog-item {
+  margin-bottom: 20px;
 }
 
 .catalog-item:hover {
@@ -498,6 +543,9 @@ svg .login-icon-fill {
 }
 
 .catalog-item h3 {
+  margin: 0;
+  padding: 0;
+
   font-size: 18px;
   line-height: 20px;
 }
@@ -581,7 +629,20 @@ svg .login-icon-fill {
   border-color: #ee3643;
 }
 
-.popular-products-and-brands h2 {
+.popular-products,
+.popular-brands {
+  position: relative;
+}
+
+.popular-brands {
+  margin-bottom: 85px;
+}
+
+.popular-products h2,
+.popular-brands h2 {
+  margin: 0;
+  padding: 33px 28px 35px;
+
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
@@ -590,11 +651,36 @@ svg .login-icon-fill {
   background-color: #f9f5f0;
 }
 
+.popular-products > .button,
+.popular-brands > .button {
+  position: absolute;
+  top: 0; /*временно*/
+  right: 0;
+}
+
 .brand-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
+.brand-logo li {
+  margin-top: 20px;
+}
+
 .brand-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 220px;
+  height: 145px;
+
   border: 1px solid #e5e5e5;
 }
 

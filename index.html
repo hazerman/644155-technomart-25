@@ -65,8 +65,8 @@
         </nav>
       </div>
     </header>
-    <main class="container">
-      <section class="promo">
+    <main>
+      <section class="promo container">
         <h2 class="visually-hidden">Промо список категорий</h2>
         <div class="promolist materials">
           <h3>Материалы</h3>
@@ -81,7 +81,7 @@
           <a class="button btn-in-promo" href="#">Для стройки</a>
         </div>
         <section class="promo-slider perforator">
-          <h3>Перофораторы</h3>
+          <h3>Перфораторы</h3>
           <p>Настоящие мужские игрушки</p>
           <img src="img/slider-perforator.jpg" width="620" height="266" alt="Так выглядит перфоратор в действии">
           <button class="btn-prev" type="button">Предыдущий слайд</button>
@@ -96,19 +96,21 @@
           <button class="btn-next" type="button">Следующий слайд</button>
           <a class="button">Открыть каталог</a>
         </section>
-        <div class="promolist sale">
-          <h3>Скидки 50%</h3>
-          <a class="button btn-in-promo" href="#">На 350 товаров</a>
-        </div>
-        <div class="promolist delivery">
-          <h3>Доставка</h3>
-          <a class="button btn-in-promo" href="#">Бесплатно</a>
+        <div class="sales-and-delivery-wrapper">
+          <div class="promolist sale">
+            <h3>Скидки 50%</h3>
+            <a class="button btn-in-promo" href="#">На 350 товаров</a>
+          </div>
+          <div class="promolist delivery">
+            <h3>Доставка</h3>
+            <a class="button btn-in-promo" href="#">Бесплатно</a>
+          </div>
         </div>
       </section>
-      <section class="popular-products-and-brands">
+      <section class="popular-products container">
         <h2>Популярные товары:</h2>
         <a class="button" href="#">Все популярные товары</a>
-        <ul class="catalog-list">
+        <ul class="catalog-list in-index">
           <li class="catalog-item">
             <h3>Перфоратор BOSCH BFG 9000</h3>
             <img src="img/bfg9000.jpg" width="218" height="170" alt="BOSCH BFG 9000">
@@ -149,6 +151,8 @@
             <span class="price" aria-label="Цена">12500 Р.</span>
           </li>
         </ul>
+      </section>
+      <section class="popular-brands container">
         <h2>Популярные производители:</h2>
         <a class="button" href="#">Все производители</a>
         <ul class="brand-logo">
@@ -195,38 +199,40 @@
         </ul>
       </section>
       <section class="services">
-        <h2>Сервисы</h2>
-        <p>
-          Хороший интернет-магазин отличается от плохого не только ценами!
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-        </p>
-        <ul class="services-list">
-            <li><a class="current-in-services" href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Кредит</a></li>
-        </ul>
-        <section class="services-slider delivery-slider">
-          <h3>Доставка</h3>
+        <div class="container">
+          <h2>Сервисы</h2>
           <p>
-            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+            Хороший интернет-магазин отличается от плохого не только ценами!
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
-        </section>
-        <section class="services-slider warranty-slider">
-          <h3>Гарантия</h3>
-          <p>
-            Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
-          </p>
-        </section>
-        <section class="services-slider credit-slider">
-          <h3>Кредит</h3>
-          <p>
-            Залезть в долговую яму стало проще!
-            Кредитные консультанты придут вам на помощь.
-          </p>
-          <a class="button" href="#">Отправить заявку</a>
-        </section>
+          <ul class="services-list">
+              <li><a class="current-in-services" href="#">Доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Кредит</a></li>
+          </ul>
+          <section class="services-slider delivery-slider">
+            <h3>Доставка</h3>
+            <p>
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+            </p>
+          </section>
+          <section class="services-slider warranty-slider">
+            <h3>Гарантия</h3>
+            <p>
+              Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
+            </p>
+          </section>
+          <section class="services-slider credit-slider">
+            <h3>Кредит</h3>
+            <p>
+              Залезть в долговую яму стало проще!
+              Кредитные консультанты придут вам на помощь.
+            </p>
+            <a class="button" href="#">Отправить заявку</a>
+          </section>
+        </div>
       </section>
-      <div class="about-and-contacts-columns">
+      <div class="about-and-contacts-columns container">
         <section class="about-company">
           <h2>Компания «Техномарт»</h2>
           <p>
