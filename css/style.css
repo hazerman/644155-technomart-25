@@ -51,11 +51,6 @@ a {
   background-color: #293449;
 }
 
-.container {
-  width: 940px;
-  margin: 0 auto;
-}
-
 .main-header-logo,
 .footer-logo {
   display: inline-block;
@@ -283,6 +278,10 @@ svg .login-icon-fill {
 }
 
 .technomart-nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -304,6 +303,7 @@ svg .login-icon-fill {
 
 .page-title {
   padding: 28px;
+  margin: 0;
   margin-bottom: 20px;
 
   font-size: 30px;
@@ -421,6 +421,7 @@ svg .login-icon-fill {
 .filters-and-catalog-columns {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 60px;
 }
 
 .filters {
@@ -618,17 +619,35 @@ svg .login-icon-fill {
 }
 
 .pagination-list {
+  display: flex;
+  margin: 0;
+  margin-top: 52px;
+  padding: 0;
+
   list-style: none;
 }
 
 .pagination-item a {
+  display: block;
+  box-sizing: border-box;
+  margin-right: 10px;
+  padding: 10px 13px;
+  min-width: 38px;
+  height: 38px;
+
   font-size: 13px;
   line-height: 18px;
+  text-align: center;
   text-transform: uppercase;
   color: #000000;
 
   border: 1px solid #e5e5e5;
   border-radius: 1px;
+}
+
+.pagination-item:last-child a {
+  margin-right: 0;
+  padding: 10px 31px;
 }
 
 .pagination-item a:hover,
@@ -718,6 +737,9 @@ svg .login-icon-fill {
 }
 
 .features {
+  padding-top: 64px;
+  padding-bottom: 70px;
+
   background-color: #f2f6f8;
 }
 
@@ -727,7 +749,7 @@ svg .login-icon-fill {
 .features h2 {
   margin: 0;
   padding: 0;
-  margin-bottom: 27px;
+  margin-bottom: 32px;
 
   font-size: 30px;
   line-height: 30px;
@@ -738,7 +760,7 @@ svg .login-icon-fill {
 .services h3 {
   margin: 0;
   padding: 0;
-  margin-bottom: 27px;
+  margin-bottom: 32px;
 
   font-size: 36px;
   line-height: 24px;
@@ -869,7 +891,6 @@ svg .login-icon-fill {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
 }
 
 .main-footer ul {
@@ -935,6 +956,7 @@ svg .login-icon-fill {
 
 .footer-in-footer .container {
   display: flex;
+  justify-content: space-between;
 }
 
 .footer-in-footer {
@@ -1007,5 +1029,11 @@ a.current-in-pagination {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 940px;
+  margin: 0 auto;
 }
 
