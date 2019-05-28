@@ -258,7 +258,16 @@ svg .login-icon-fill {
   box-shadow: 0 -5px 0 0 #293449 inset;
 }
 
+.site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .site-navigation a {
+  display: block;
+  padding: 21px 31px;
+
   color: #ffffff;
 }
 
@@ -370,7 +379,9 @@ svg .login-icon-fill {
 /*временно*/
 .drill.promo-slider,
 .btn-prev,
-.btn-next {
+.btn-next,
+.warranty-slider,
+.credit-slider {
   display: none;
 }
 
@@ -699,6 +710,10 @@ svg .login-icon-fill {
 }
 
 .services {
+  padding-top: 72px;
+  padding-bottom: 98px;
+  margin-bottom: 73px;
+
   background-color: #f4f8fa;
 }
 
@@ -710,6 +725,10 @@ svg .login-icon-fill {
 .about-company h2,
 .contacts h2,
 .features h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 27px;
+
   font-size: 30px;
   line-height: 30px;
   color: #000000;
@@ -717,6 +736,10 @@ svg .login-icon-fill {
 }
 
 .services h3 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 27px;
+
   font-size: 36px;
   line-height: 24px;
   color: #32425c;
@@ -727,17 +750,53 @@ svg .login-icon-fill {
 .about-company p,
 .contacts p,
 .features p {
+  margin: 0;
+  padding: 0;
+
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
 }
 
+.services p {
+  width: 400px;
+}
+
+.about-company p {
+  width: 520px;
+}
+
+.about-company p:last-of-type {
+  width: 390px;
+}
+
+.contacts p {
+  width: 180px;
+}
+
+.about-company p,
+.contacts p {
+  margin-bottom: 30px;
+}
+
+.services-slider-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+
 .services-list {
+  width: 240px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .services-list a {
+  display: block;
+
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
@@ -752,6 +811,10 @@ svg .login-icon-fill {
 .services-list a:hover,
 .services-list a:focus {
   background-color: #293449;
+}
+
+.services-slider {
+  width: 620px;
 }
 
 .about-and-contacts-columns {
@@ -769,6 +832,10 @@ svg .login-icon-fill {
 }
 
 .delivery-companies {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+
   font-size: 18px;
   line-height: 20px;
   color: #000000;
@@ -778,6 +845,7 @@ svg .login-icon-fill {
 
 .map-button {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   width: 300px;
   height: 158px;
@@ -805,19 +873,37 @@ svg .login-icon-fill {
 }
 
 .main-footer ul {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
-.footer-navigation {
-  width: 550px;
+.footer-navigation,
+.promo-list-in-footer {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 560px;
+}
+
+.footer-navigation li,
+.promo-list-in-footer li {
+  padding: 0 30px;
+}
+
+.footer-navigation li:first-child,
+.promo-list-in-footer li:first-child {
+  padding-left: 0;
+}
+
+.footer-navigation li:last-child,
+.promo-list-in-footer li:last-child {
+  padding-right: 0;
 }
 
 .footer-navigation a {
   color: #ffffff;
-}
-
-.promo-list-in-footer {
-  width: 530px;
 }
 
 .promo-list-in-footer a {
