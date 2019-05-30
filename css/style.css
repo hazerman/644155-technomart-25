@@ -12,15 +12,25 @@ a {
   text-decoration: none;
 }
 
+.container {
+  box-sizing: border-box;
+  width: 940px;
+  margin: 0 auto;
+}
+
 .button {
+  display: inline-block;
+  padding: 10px 15px;
+
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
+  text-align: center;
   text-transform: uppercase;
 
   background-color: #ee3643;
   border: none;
-  border-radius: 1px;
+  border-radius: 3px;
 }
 
 .button:hover,
@@ -51,12 +61,16 @@ a {
   background-color: #293449;
 }
 
+.header-in-header .container {
+  display: flex;
+}
+
 .main-header-logo,
 .footer-logo {
-  display: inline-block;
+  padding: 13px 57px 11px 55px;
 
   background-color: #ee3643;
-  box-shadow: 0 -5px 0 0 rgba(0, 0, 0, 0.24) inset;
+  box-shadow: 0 5px 0 0 #b52933;
 }
 
 a.main-header-logo:hover,
@@ -68,13 +82,48 @@ a.main-header-logo:active {
   background-color: #ba2732;
 }
 
-.search-icon {
+.search-form {
+  display: flex;
+}
+
+svg .fill-icon-search {
+  fill: #ffffff;
+}
+
+.search-form label {
+  order: -1;
+  padding: 12px 13px 13px 17px;
+
   opacity: 0.3;
 }
 
+.search-form label:hover {
+  background-color: #212a3a;
+  opacity: 1;
+}
+
 input[type="search"] {
+  width: 225px;
+
+  font-size: 17px;
+  line-height: 18px;
+
   background-color: #293449;
   border: none;
+}
+
+input[type="search"]:hover + label {
+  background-color: #212a3a;
+  opacity: 1;
+}
+
+input[type="search"]:focus + label {
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+input[type="search"]:focus + label .fill-icon-search {
+  fill: #ee3643;
 }
 
 input[type="search"]::-webkit-input-placeholder {
@@ -87,9 +136,42 @@ input[type="search"]::-moz-input-placeholder {
 
 .tabs,
 .cart {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 150px;
+
   color: #ffffff;
 
   background-color: #293449;
+}
+
+.tabs {
+  padding: 13px 10px 12px 44px;
+}
+
+.tabs::before {
+  content: url("../img/icon-tabs.svg");
+
+  position: absolute;
+  top: 12px;
+  left: 17px;
+
+  opacity: 0.3;
+}
+
+.cart {
+  padding: 13px 10px 12px 50px;
+}
+
+.cart::before {
+  content: url("../img/icon-cart.svg");
+
+  position: absolute;
+  top: 12px;
+  left: 18px;
+
+  opacity: 0.3;
 }
 
 input[type="search"]:hover,
@@ -100,10 +182,20 @@ input[type="search"]:hover,
   background-color: #212a3a;
 }
 
+.tabs:hover::before,
+.cart:hover::before{
+  opacity: 1;
+}
+
 .tabs:active,
 .cart:active {
   background-color: #161d29;
   opacity: 0.6;
+}
+
+.tabs:active::before,
+.cart:active::before{
+  opacity: 0.5;
 }
 
 input[type="search"]:focus {
@@ -111,12 +203,11 @@ input[type="search"]:focus {
   outline: none;
 }
 
-.search-icon:hover {
-  background-color: #212a3a;
-  opacity: 1;
-}
-
 .btn-checkout {
+  box-sizing: border-box;
+  padding: 13px 20px 12px 20px;
+  width: 150px;
+
   color: #ffffff;
 
   background-color: #63a63e;
@@ -133,11 +224,16 @@ input[type="search"]:focus {
 }
 
 .footer-in-header {
+  display: flex;
   margin-bottom: 43px;
 }
 
 .main-description {
+  box-sizing: border-box;
   margin: 0;
+  margin-right: 20px;
+  padding: 0 55px 0 53px;
+  width: 300px;
 
   font-style: italic;
   font-size: 16px;
@@ -145,18 +241,35 @@ input[type="search"]:focus {
   color: #ee3643;
 }
 
+.address-number-header {
+  width: 270px;
+  margin-right: 69px;
+}
+
 .telephone-number-header {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px 49px 7px 71px;
+
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
 
+  background: url("../img/icon-phone.svg") 15px center no-repeat;
   border: 3px solid #ffffff;
 }
 
 .address-header {
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+  width: 100%;
+
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
   color: #32425c;
 }
 
@@ -208,12 +321,30 @@ input[type="search"]:focus {
   list-style: none;
 }
 
+.user-navigation {
+  display: flex;
+  width: 281px;
+  justify-content: space-between;
+}
+
 .user-navigation a {
+  display: block;
+  padding: 11px 24px;
+
+
   font-size: 21px;
   line-height: 21px;
   color: #000000;
 
   background-color: #ffffff;
+}
+
+.user-navigation .login-link {
+  padding-left: 14px;
+}
+
+.login-link svg {
+  margin-right: 10px;
 }
 
 .user-navigation a:hover,
@@ -799,7 +930,7 @@ svg .login-icon-fill {
 
 .about-company p,
 .contacts p {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .services-slider-wrapper {
@@ -865,6 +996,27 @@ svg .login-icon-fill {
   list-style: none;
 }
 
+.delivery-companies li {
+  position: relative;
+
+  margin-left: 35px;
+  margin-bottom: 22px;
+}
+
+.delivery-companies li::before {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: -35px;
+
+  display: block;
+  width: 25px;
+  height: 2px;
+
+  background-color: #ee3643;
+}
+
 .map-button {
   margin: 0;
   margin-bottom: 40px;
@@ -874,6 +1026,10 @@ svg .login-icon-fill {
 
   background-color: #f4f2ed;
   border: none;
+}
+
+.contacts .button {
+  width: 100%;
 }
 
 .main-footer {
@@ -1031,9 +1187,5 @@ a.current-in-pagination {
   margin: -1px;
 }
 
-.container {
-  box-sizing: border-box;
-  width: 940px;
-  margin: 0 auto;
-}
+
 
