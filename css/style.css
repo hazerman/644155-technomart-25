@@ -243,7 +243,6 @@ input[type="search"]:focus {
 
 .address-number-header {
   width: 270px;
-  margin-right: 69px;
 }
 
 .telephone-number-header {
@@ -273,7 +272,18 @@ input[type="search"]:focus {
   color: #32425c;
 }
 
+.user-area-and-navigation-wrapper {
+  width: 300px;
+  margin-left: 50px;
+}
+
 .user-area {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 10px 12px 14px;
+
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -285,11 +295,22 @@ input[type="search"]:focus {
   color: #000000;
 }
 
+.user-name svg {
+  margin-right: 14px;
+}
+
 .user-name:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
 .user-navigation-if-logged {
+  display: flex;
+  margin: 0;
+  margin-top: 9px;
+  margin-left: 18px;
+  padding: 0;
+
+
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
@@ -297,6 +318,7 @@ input[type="search"]:focus {
 
 .user-navigation-if-logged li:first-child {
   list-style: none;
+  margin-right: 32px;
 }
 
 .user-navigation-if-logged a {
@@ -324,6 +346,7 @@ input[type="search"]:focus {
 .user-navigation {
   display: flex;
   width: 281px;
+  margin-left: 69px;
   justify-content: space-between;
 }
 
@@ -410,7 +433,8 @@ svg .login-icon-fill {
 
 .technomart-nav {
   display: flex;
-  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 0;
 
   font-size: 13px;
@@ -421,20 +445,40 @@ svg .login-icon-fill {
 }
 
 .technomart-nav a {
+  display: block;
   color: #000000;
 }
 
 .technomart-nav li {
+  margin-right: 28px;
+  padding-left: 16px;
+
   list-style-image: url("../img/icon-right-small.svg");
 }
 
+
+
 .technomart-nav li:first-child {
+  padding-left: 0;
+
   list-style: none;
+}
+
+.technomart-nav li:last-child {
+  margin-right: 0;
+}
+
+.technomart-nav li:first-child a {
+  width: 15px;
+  height: 12px;
+
+  background-image: url(../img/icon-home.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .page-title {
   padding: 28px;
-  margin: 0;
   margin-bottom: 20px;
 
   font-size: 30px;
@@ -629,6 +673,22 @@ svg .login-icon-fill {
   background-color: #f7f3ec;
   border: none;
   border-radius: 1px;
+}
+
+.sorting {
+  position: relative;
+}
+
+.sorting-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .sorting-category {
@@ -1224,10 +1284,18 @@ a.current-in-pagination {
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 
