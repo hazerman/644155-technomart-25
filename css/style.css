@@ -719,15 +719,21 @@ svg .login-icon-fill {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
+  flex-shrink: 0;
   justify-content: space-between;
   margin: 0;
   padding: 0;
 }
 
 .catalog-item {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
   box-sizing: border-box;
-  width: 220px;
+  max-width: 220px;
   margin-top: 20px;
+  padding-bottom: 20px;
 
   font-family: "PT Sans", "Arial", sans-serif;
   text-align: center;
@@ -736,8 +742,37 @@ svg .login-icon-fill {
   list-style: none;
 }
 
+.catalog-item:hover {
+  padding-top: 1px;
+  padding-bottom: 21px;
+}
+
 .in-index .catalog-item {
   margin-bottom: 20px;
+}
+
+.catalog-item .catalog-options {
+  position: absolute;
+
+  box-sizing: border-box;
+  width: 218px;
+  height: 170px;
+  padding: 43px 0;
+  order: -2;
+
+  background-color: #ffffff;
+}
+
+.catalog-options .button {
+  display: block;
+}
+
+.catalog-item img {
+  order: -1;
+}
+
+.catalog-item .catalog-options {
+  display: none;
 }
 
 .catalog-item:hover {
@@ -745,8 +780,13 @@ svg .login-icon-fill {
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
+.catalog-item:hover .catalog-options {
+  display: block;
+}
+
 .catalog-item h3 {
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
 
   font-size: 18px;
@@ -762,18 +802,48 @@ svg .login-icon-fill {
   text-decoration: line-through;
 }
 
+.old-price {
+  width: 100%;
+  min-height: 20px;
+  margin-bottom: 10px;
+}
+
 .price {
+  position: relative;
+  margin: 0 auto;
+  padding: 10px 30px;
+
   color: #ffffff;
   text-decoration: none;
   background-color: #ee3643;
+  border-radius: 3px;
+}
+
+.price::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: -20px;
+
+  width: 0;
+  height: 0;
+
+  border: 19px solid white;
+  border-left-color: #ee3643;
 }
 
 .btn-buy,
 .btn-tabs {
+  width: 135px;
+  margin: 0 auto;
+
   font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .btn-buy {
+  margin-bottom: 8px;
+
   background-color: #63a63e;
   box-shadow: 0 -3px 0 0 #367315 inset;
 }
@@ -790,6 +860,8 @@ svg .login-icon-fill {
 }
 
 .btn-tabs {
+  padding: 7px 12px;
+
   color: #32425c;
 
   background-color: transparent;
@@ -807,6 +879,23 @@ svg .login-icon-fill {
 .btn-tabs:active {
   opacity: 0.3;
   outline: none;
+}
+
+.new-flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  z-index: 10;
+
+  width: 60px;
+  height: 59px;
+
+  background: url("../img/new-flag.png") 0 0 no-repeat;
+}
+
+.catalog-item:hover .new-flag {
+  top: 0;
+  right: 0;
 }
 
 .pagination-list {
