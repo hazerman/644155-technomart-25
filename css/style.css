@@ -31,6 +31,8 @@ a {
   background-color: #ee3643;
   border: none;
   border-radius: 3px;
+
+  cursor: pointer;
 }
 
 .button:hover,
@@ -455,8 +457,6 @@ svg .login-icon-fill {
 
   list-style-image: url("../img/icon-right-small.svg");
 }
-
-
 
 .technomart-nav li:first-child {
   padding-left: 0;
@@ -963,6 +963,8 @@ svg .login-icon-fill {
 }
 
 .btn-buy {
+  position: relative;
+
   margin-bottom: 8px;
 
   background-color: #63a63e;
@@ -972,6 +974,20 @@ svg .login-icon-fill {
 .btn-buy:hover,
 .btn-buy:focus {
   background-color: #5fbb2d;
+}
+
+.btn-buy::before {
+  content: url("../img/icon-cart.svg");
+
+  position: absolute;
+  top: 10px;
+  left: 12px;
+
+  opacity: 0.3;
+}
+
+.btn-buy:hover::before {
+  opacity: 1;
 }
 
 .btn-buy:active {
@@ -1002,7 +1018,9 @@ svg .login-icon-fill {
   outline: none;
 }
 
-.new-flag {
+.new-flag::before {
+  content: url("../img/new-flag.png");
+
   position: absolute;
   top: -1px;
   right: -1px;
@@ -1010,11 +1028,9 @@ svg .login-icon-fill {
 
   width: 60px;
   height: 59px;
-
-  background: url("../img/new-flag.png") 0 0 no-repeat;
 }
 
-.catalog-item:hover .new-flag {
+.new-flag:hover::before {
   top: 0;
   right: 0;
 }
