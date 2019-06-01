@@ -20,6 +20,7 @@ a {
 
 .button {
   display: inline-block;
+  box-sizing: border-box;
   padding: 10px 15px;
 
   font-size: 14px;
@@ -501,7 +502,15 @@ svg .login-icon-fill {
 }
 
 .promolist {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
   margin-bottom: 20px;
+  padding: 22px 25px;
 
   width: 300px;
   height: 123px;
@@ -528,9 +537,13 @@ svg .login-icon-fill {
   background-color: #3a241f;
 }
 
-.promo-slider h3 {
-  position: absolute; /*временно без четкой позиции*/
+.promo-slider-text-position {
+  position: absolute;
+  top: 27px;
+  left: 24px;
+}
 
+.promo-slider-text-position h3 {
   margin: 0;
   padding: 0;
 
@@ -539,28 +552,56 @@ svg .login-icon-fill {
   text-transform: uppercase;
 }
 
-.promo-slider p {
-  position: absolute; /*временно без четкой позиции*/
+.promo-slider-text-position p {
+  margin: 0;
+  padding: 0;
 
   font-size: 18px;
   line-height: 24px;
 }
 
 .promo-slider .button {
-  position: absolute; /*временно без четкой позиции*/
-  top: 0;
+  position: absolute;
+  bottom: 22px;
+  left: 24px;
+
+  min-width: 195px;
+}
+
+.btn-prev,
+.btn-next {
+  position: absolute;
+  top: 114px;
+
+  width: 22px;
+  height: 40px;
+
+  background: transparent url("../img/icon-left.svg") no-repeat 0 0;
+  border: none;
+
+  cursor: pointer;
+}
+
+.btn-prev {
+  left: 24px;
+}
+
+.btn-next {
+  right: 24px;
+
+  transform: rotate(180deg);
 }
 
 /*временно*/
 .drill.promo-slider,
-.btn-prev,
-.btn-next,
 .warranty-slider,
 .credit-slider {
   display: none;
 }
 
 .btn-in-promo {
+  min-width: 135px;
+
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -575,22 +616,37 @@ svg .login-icon-fill {
 
 .materials {
   background-color: #ffbf47;
+  background-image: url("../img/icon-materials.svg");
+  background-repeat: no-repeat;
+  background-position: top 31px right 43px;
 }
 
 .instrument {
   background-color: #3bbce3;
+  background-image: url("../img/icon-intrument.svg");
+  background-repeat: no-repeat;
+  background-position: top 33px right 28px;
 }
 
 .tech {
   background-color: #dc91d8;
+  background-image: url("../img/icon-tech.svg");
+  background-repeat: no-repeat;
+  background-position: top 31px right 31px;
 }
 
 .sale {
   background-color: #8ed78f;
+  background-image: url("../img/icon-sales.svg");
+  background-repeat: no-repeat;
+  background-position: top 26px right 45px;
 }
 
 .delivery {
   background-color: #ffc047;
+  background-image: url("../img/icon-delivery.svg");
+  background-repeat: no-repeat;
+  background-position: top 32px right 31px;
 }
 
 .filters-and-catalog-columns {
@@ -1030,7 +1086,8 @@ svg .login-icon-fill {
   height: 59px;
 }
 
-.new-flag:hover::before {
+.promolist.new-flag::before,
+.catalog-item.new-flag:hover::before {
   top: 0;
   right: 0;
 }
@@ -1101,8 +1158,10 @@ svg .login-icon-fill {
 .popular-products > .button,
 .popular-brands > .button {
   position: absolute;
-  top: 0; /*временно*/
-  right: 0;
+  top: 25px;
+  right: 24px;
+
+  min-width: 252px;
 }
 
 .brand-logo {
