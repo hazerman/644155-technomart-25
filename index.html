@@ -97,8 +97,8 @@
             <p>Соседям на радость!</p>
           </div>
           <img src="img/slider-drill.jpg" width="620" height="266" alt="Так выглядит дрель в действии">
-          <button class="btn-prev" type="button">Предыдущий слайд</button>
-          <button class="btn-next" type="button">Следующий слайд</button>
+          <button class="btn-prev" type="button"><span class="visually-hidden">Предыдущий слайд</span></button>
+          <button class="btn-next" type="button"><span class="visually-hidden">Следующий слайд</span></button>
           <a class="button">Открыть каталог</a>
         </section>
         <div class="sales-and-delivery-wrapper">
@@ -268,23 +268,25 @@
           </button>
           <div class="modal modal-map">
             <img src="img/map-large.jpg" width="940" height="446" alt="Наш адрес: ул. Конюшенная 19, г. Санкт-петербург">
-            <button class="close-button" type="button">Закрыть карту</button>
+            <button class="close-button" type="button"><span class="visually-hidden">Закрыть карту</span></button>
           </div>
           <button class="button">Заблудились? Напишите нам!</button>
           <div class="modal modal-form" >
             <form class="appeal-form" action="https://echo.htmlacademy.ru" method="post">
-              <fieldset>
-                <legend class="visually-hidden">Форма обращения</legend>
-                <label for="name">Ваше имя:</label>
-                <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-                <label for="email">Ваш e-mail:</label>
-                <input type="email" name="email" id="email" placeholder="email@example.com">
+                <h3 class="visually-hidden">Форма обращения</h3>
+                <div class="label-input-wrapper">
+                  <label for="name">Ваше имя:</label>
+                  <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+                </div>
+                <div class="label-input-wrapper">
+                  <label for="email">Ваш e-mail:</label>
+                  <input type="email" name="email" id="email" placeholder="email@example.com">
+                </div>
                 <label for="appeal">Текст письма:</label>
                 <textarea name="appeal" id="appeal" placeholder="В свободной форме"></textarea>
                 <button class="button" type="submit">Отправить</button>
-              </fieldset>
             </form>
-            <button class="close-button" type="button">Закрыть форму</button>
+            <button class="close-button" type="button"><span class="visually-hidden">Закрыть форму</span></button>
           </div>
         </section>
       </div>
