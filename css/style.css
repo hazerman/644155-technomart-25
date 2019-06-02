@@ -681,7 +681,11 @@ svg .login-icon-fill {
   line-height: 18px;
 
   background-color: #f7f3ec;
-  border-radius: 1px;
+  border-radius: 3px;
+}
+
+.filters h2 {
+  margin-bottom: 20px;
 }
 
 .filter-form fieldset{
@@ -691,7 +695,6 @@ svg .login-icon-fill {
   padding: 0;
 
   border: none;
-
 }
 
 .filter-form legend {
@@ -722,10 +725,61 @@ svg .login-icon-fill {
   line-height: 20px;
 }
 
+.filter-fieldset.filter-price {
+  display: block;
+}
+
 .range-field {
+  position: relative;
   margin-bottom: 9px;
   width: 220px;
   height: 80px;
+}
+
+.filter-range-transparent-line {
+  position: absolute;
+  top: 39px;
+  left: 20px;
+
+  width: 180px;
+  height: 2px;
+
+  background-color: #d7dcde;
+}
+
+.filter-range-above-line {
+  position: absolute;
+  top: 39px;
+  left: 20px;
+
+  width: 151px;
+  height: 2px;
+
+  background-color: #00ca74;
+}
+
+.filter-button {
+  position: absolute;
+
+  padding: 2px;
+  width: 2px;
+  height: 2px;
+
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #e0ddd8;
+}
+
+.range-field .filter-button:first-of-type {
+  top: 30px;
+  left: 20px;
+  z-index: 1;
+}
+
+.range-field .filter-button:last-of-type {
+  top: 30px;
+  right: 40px;
 }
 
 .input-range {
@@ -737,11 +791,16 @@ svg .login-icon-fill {
   text-align: center;
 }
 
+.dash {
+  display: inline-block;
+  margin: 0 4px;
+}
+
 .input-range,
 .range-field {
   background-color: #f7f3ec;
   border: none;
-  border-radius: 1px;
+  border-radius: 3px;
 }
 
 .filter-fieldset input[type="radio"],
@@ -1439,11 +1498,52 @@ svg .login-icon-fill {
   width: 100%;
 }
 
+.modal-cart-add {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  z-index: 1200;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 620px;
+  padding: 45px 80px 37px;
+
+  background: #ffffff url("../img/icon-success.svg") no-repeat top 48px left 81px;
+  box-shadow:
+    0 -7px 0 0 #ff5358,
+    0 20px 40px 0 rgba(0, 0, 0, 0.75),
+    0 -112px 0 0 #f4f4f4 inset;
+}
+
+.modal-cart-add p {
+  margin: 0;
+  margin-bottom: 100px;
+  padding: 18px 44px 0 98px;
+
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.modal-cart-add .button {
+  min-width: 220px;
+}
+
+.modal-cart-add .btn-continue {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
 .modal-map {
   position: fixed;
   top: 10%;
   left: 10%;
   z-index: 1200;
+
+  background-color: #eeeae3;
 }
 
 .modal-form {
@@ -1704,11 +1804,9 @@ a.current-in-pagination {
   border: none;
 }
 
-/*
 .modal {
   display: none;
 }
-*/
 
 .visually-hidden {
   position: absolute;
@@ -1725,6 +1823,3 @@ a.current-in-pagination {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-
-

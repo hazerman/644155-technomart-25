@@ -92,14 +92,14 @@
             <fieldset class="filter-fieldset filter-price">
               <legend>Цена:</legend>
               <div class="range-field">
-                <button class="filter-button" type="button">Меньшее значение</button>
+                <button class="filter-button" type="button"><span class="visually-hidden">Меньшее значение</span></button>
                 <div class="filter-range-transparent-line"></div>
                 <div class="filter-range-above-line"></div>
-                <button class="filter-button" type="button">Большее значение</button>
+                <button class="filter-button" type="button"><span class="visually-hidden">Большее значение</span></button>
               </div>
-              <input class="input-range" type="text" name="min-price" id="min-price">
-              -
-              <input class="input-range" type="text" name="max-price" id="max-price">
+              <input class="input-range" type="text" name="min-price" id="min-price" placeholder="0">
+              <span class="dash">&mdash;</span>
+              <input class="input-range" type="text" name="max-price" id="max-price" placeholder="30000">
             </fieldset>
             <fieldset class="filter-fieldset filter-brands">
               <legend>Производители:</legend>
@@ -233,7 +233,7 @@
               <p>Товар добавлен в корзину!</p>
               <a class="button" href="#">Оформить заказ</a>
               <button class="button btn-continue">Продолжить покупки</button>
-              <button class="close-button" type="button">Закрыть окно</button>
+              <button class="close-button" type="button"><span class="visually-hidden">Закрыть окно</span></button>
             </div>
             <ul class="pagination-list">
               <li class="pagination-item"><a class="current-in-pagination" href="#">1</a></li>
