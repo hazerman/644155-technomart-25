@@ -912,17 +912,22 @@ svg .login-icon-fill {
 
 .sorting-list {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  left: 240px;
 
   display: flex;
+
   margin: 0;
   padding: 0;
+  width: 460px;
 
   list-style: none;
 }
 
 .sorting-category {
+  display: inline-block;
+  width: 118px;
+
   font-size: 13px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
@@ -932,11 +937,35 @@ svg .login-icon-fill {
   text-decoration-color: #ee3643;
 }
 
+.arrow {
+  width: 0;
+  height: 0;
+  margin-right: 20px;
+
+  border: 10px solid transparent;
+  border-bottom-color: #c5c5c5;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 0;
+}
+
+.arrow-up {
+  margin-left: 45px;
+}
+
+.arrow-down {
+  transform: rotate(180deg);
+}
+
 .sorting-category:hover,
 .sorting-category:focus {
   color: #000000;
 
   text-decoration-style: solid;
+}
+
+.arrow:hover {
+  border-bottom-color: #231f20;
 }
 
 .btn-show,
@@ -1727,6 +1756,10 @@ ul.promo-list-in-footer {
   width: 240px;
 }
 
+.footer-copyright:nth-of-type(2) {
+  margin-right: 45px;
+}
+
 ul.footer-social-list {
   display: flex;
   flex-wrap: wrap;
@@ -1802,6 +1835,10 @@ a.current-in-pagination {
 
   background-color: #ee3643;
   border: none;
+}
+
+a.current-in-arrow {
+  border-bottom-color: #ee3643;
 }
 
 .modal {
