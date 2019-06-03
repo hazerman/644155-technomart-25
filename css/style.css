@@ -1213,11 +1213,13 @@ svg .login-icon-fill {
 }
 
 .pagination-item a:hover,
-.pagination-item a:focus {
+.pagination-item a:focus,
+.btn-show:hover {
   border-color: #bdc6ca;
 }
 
-.pagination-item a:active {
+.pagination-item a:active,
+.btn-show:active {
   border-color: #ee3643;
 }
 
