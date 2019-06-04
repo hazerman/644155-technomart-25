@@ -1531,8 +1531,8 @@ svg .login-icon-fill {
 
 .modal-cart-add {
   position: fixed;
-  top: 10%;
-  left: 10%;
+  top: 50%;
+  left: 50%;
   z-index: 1200;
 
   display: flex;
@@ -1540,6 +1540,7 @@ svg .login-icon-fill {
   justify-content: space-between;
   box-sizing: border-box;
   width: 620px;
+  margin-left: -310px;
   padding: 45px 80px 37px;
 
   background: #ffffff url("../img/icon-success.svg") no-repeat top 48px left 81px;
@@ -1568,13 +1569,26 @@ svg .login-icon-fill {
   background-color: #ffffff;
 }
 
+.modal-cart-add .btn-continue:hover {
+  box-shadow: 0 0 0 1px #bdc6ca inset;
+}
+
+.modal-cart-add .btn-continue:active {
+  box-shadow: 0 0 0 1px #ee3643 inset;
+}
+
 .modal-map {
   position: fixed;
-  top: 10%;
-  left: 10%;
+  top: 50%;
+  left: 50%;
   z-index: 1200;
 
+  margin-left: -470px;
+  width: 940px;
+  height: 446px;
+
   background-color: #eeeae3;
+  box-shadow: 0px 0px 16px 1.28px rgba(47, 42, 43, 0.5);
 }
 
 .modal-form {
@@ -1584,6 +1598,7 @@ svg .login-icon-fill {
   z-index: 1000;
 
   box-sizing: border-box;
+  margin-left: -310px;
   padding: 45px 80px 37px;
   width: 620px;
 
@@ -1644,10 +1659,35 @@ svg .login-icon-fill {
   width: 21px;
   height: 21px;
 
-  background: transparent url(../img/icon-close.svg) no-repeat 0 0;
+
+  background-color: transparent;
   border: none;
   cursor: pointer;
 }
+
+.close-button::before,
+.close-button::after {
+  position: absolute;
+  top: 9px;
+  left: 0;
+
+  content: "";
+
+  width: 27px;
+  height: 3px;
+
+  background-color: #ee3643;
+  border-radius: 3px;
+}
+
+.close-button::before {
+  transform: rotate(45deg);
+}
+
+.close-button::after {
+  transform: rotate(-45deg);
+}
+
 
 .main-footer {
   display: flex;
