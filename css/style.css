@@ -66,11 +66,12 @@ a {
 
 .header-in-header .container {
   display: flex;
+  align-items: flex-start;
 }
 
 .main-header-logo,
 .footer-logo {
-  padding: 13px 57px 11px 55px;
+  padding: 13px 57px 8px 55px;
 
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b52933;
@@ -95,7 +96,7 @@ svg .fill-icon-search {
 
 .search-form label {
   order: -1;
-  padding: 12px 13px 13px 17px;
+  padding: 12px 13px 10px 17px;
 
   opacity: 0.3;
 }
@@ -107,6 +108,7 @@ svg .fill-icon-search {
 
 input[type="search"] {
   width: 225px;
+  padding: 0;
 
   font-size: 17px;
   line-height: 18px;
@@ -129,11 +131,7 @@ input[type="search"]:focus + label .fill-icon-search {
   fill: #ee3643;
 }
 
-input[type="search"]::-webkit-input-placeholder {
-  color: #ffffff;
-}
-
-input[type="search"]::-moz-input-placeholder {
+input[type="search"]::placeholder {
   color: #ffffff;
 }
 
@@ -228,6 +226,7 @@ input[type="search"]:focus {
 
 .footer-in-header {
   display: flex;
+  flex-shrink: 0;
   margin-bottom: 43px;
 }
 
@@ -356,7 +355,6 @@ input[type="search"]:focus {
 .user-navigation a {
   display: block;
   padding: 11px 24px;
-
 
   font-size: 21px;
   line-height: 21px;
@@ -964,24 +962,10 @@ svg .login-icon-fill {
   border-bottom-color: #231f20;
 }
 
-.btn-show,
-.btn-show:hover,
-.btn-show:focus,
-.btn-show:active {
-  min-width: 140px;
-
-  font-size: 13px;
-  color: #000000;
-
-  background-color: transparent;
-  border: 1px solid #e5e5e5;
-}
-
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
   flex-shrink: 0;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
@@ -994,6 +978,7 @@ svg .login-icon-fill {
   box-sizing: border-box;
   max-width: 220px;
   margin-top: 20px;
+  margin-right: 20px;
   padding-bottom: 20px;
 
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1003,9 +988,13 @@ svg .login-icon-fill {
   list-style: none;
 }
 
-.catalog-item:hover {
-  padding-top: 1px;
-  padding-bottom: 21px;
+.catalog-item:nth-child(3n),
+.in-index .catalog-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.in-index .catalog-item:nth-child(3n) {
+  margin-right: 20px;
 }
 
 .in-index .catalog-item {
@@ -1030,6 +1019,8 @@ svg .login-icon-fill {
 
 .catalog-item img {
   order: -1;
+  width: 218px;
+  height: 170px;
 }
 
 .catalog-item .catalog-options {
@@ -1037,6 +1028,9 @@ svg .login-icon-fill {
 }
 
 .catalog-item:hover {
+  padding-top: 1px;
+  padding-bottom: 21px;
+
   border: none;
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
@@ -1206,6 +1200,19 @@ svg .login-icon-fill {
 .pagination-item:last-child a {
   margin-right: 0;
   padding: 10px 31px;
+}
+
+.btn-show,
+.btn-show:hover,
+.btn-show:focus,
+.btn-show:active {
+  min-width: 140px;
+
+  font-size: 13px;
+  color: #000000;
+
+  background-color: transparent;
+  border: 1px solid #e5e5e5;
 }
 
 .pagination-item a:hover,
