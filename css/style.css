@@ -689,7 +689,6 @@ svg .login-icon-fill {
 }
 
 .filter-form fieldset{
-  display: flex;
   margin: 0;
   margin-bottom: 45px;
   padding: 0;
@@ -721,12 +720,12 @@ svg .login-icon-fill {
 }
 
 .filter-form label {
+  display: block;
+
   font-size: 15px;
   line-height: 20px;
-}
 
-.filter-fieldset.filter-price {
-  display: block;
+  cursor: pointer;
 }
 
 .range-field {
@@ -803,11 +802,6 @@ svg .login-icon-fill {
   border-radius: 3px;
 }
 
-.filter-fieldset input[type="radio"],
-.filter-fieldset input[type="checkbox"] {
-  display: none;
-}
-
 .filter-fieldset input[type="radio"] + label,
 .filter-fieldset input[type="checkbox"] + label {
   position: relative;
@@ -835,23 +829,20 @@ svg .login-icon-fill {
 }
 
 .filter-fieldset input[type="checkbox"]:checked + label::before {
-  display: none;
-}
-
-.filter-fieldset input[type="checkbox"]:checked + label::after {
   content: url("../img/checkbox-on.svg");
 
   position: absolute;
   top: 0;
   left: 2px;
 
-  width: 19px;
-  height: 27px;
+  width: 27px;
+  height: 23px;
 
+  border: none;
   opacity: 0.79;
 }
 
-.filter-fieldset input[type="checkbox"]:checked + label:hover::after {
+.filter-fieldset input[type="checkbox"]:checked + label:hover::before {
   opacity: 1;
 }
 
@@ -904,6 +895,11 @@ svg .login-icon-fill {
 
 .filter-fieldset input[type="radio"]:checked:disabled + label::before {
   background-color: #e9e9e9;
+}
+
+.filter-fieldset input[type="checkbox"]:focus + label::before,
+.filter-fieldset input[type="radio"]:focus + label::before {
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .sorting {
