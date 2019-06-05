@@ -308,7 +308,7 @@ input[type="search"]:focus {
 }
 
 .user-name svg {
-  margin-right: 14px;
+  margin-right: 9px;
 }
 
 .user-name:active {
@@ -318,7 +318,7 @@ input[type="search"]:focus {
 .user-navigation-if-logged {
   display: flex;
   margin: 0;
-  margin-top: 9px;
+  margin-top: 8px;
   margin-left: 18px;
   padding: 0;
 
@@ -452,8 +452,8 @@ svg .login-icon-fill {
 
 .technomart-nav {
   display: flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 21px;
+  margin-bottom: 20px;
   padding: 0;
 
   font-size: 13px;
@@ -469,8 +469,8 @@ svg .login-icon-fill {
 }
 
 .technomart-nav li {
-  margin-right: 28px;
-  padding-left: 16px;
+  margin-right: 30px;
+  padding-left: 10px;
 
   list-style-image: url("../img/icon-right-small.svg");
 }
@@ -496,6 +496,7 @@ svg .login-icon-fill {
 
 .page-title {
   padding: 28px;
+  padding-top: 30px;
   margin-bottom: 20px;
 
   font-size: 30px;
@@ -707,21 +708,29 @@ svg .login-icon-fill {
 }
 
 .filters h2 {
-  margin-bottom: 20px;
+  margin-bottom: 11px;
 }
 
 .filter-form fieldset{
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   padding: 0;
 
   border: none;
 }
 
+.filter-form fieldset:first-of-type {
+  margin-bottom: 45px;
+}
+
+.filter-form fieldset:last-of-type {
+  margin-bottom: 60px;
+}
+
 .filter-form legend {
   position: relative;
 
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 
   font-weight: bold;
   font-size: 17px;
@@ -1341,7 +1350,7 @@ svg .login-icon-fill {
 
 .features {
   padding-top: 64px;
-  padding-bottom: 70px;
+  padding-bottom: 44px;
 
   background-color: #f2f6f8;
 }
