@@ -14,8 +14,10 @@ a {
 
 .container {
   box-sizing: border-box;
-  width: 940px;
+  width: 960px;
   margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .button {
@@ -454,7 +456,6 @@ svg .login-icon-fill {
   display: flex;
   margin-top: 21px;
   margin-bottom: 20px;
-  padding: 0;
 
   font-size: 13px;
   line-height: 18px;
@@ -495,9 +496,8 @@ svg .login-icon-fill {
 }
 
 .page-title {
-  padding: 28px;
-  padding-top: 30px;
-  margin-bottom: 20px;
+  padding: 30px 38px 29px 38px;
+  margin-bottom: 19px;
 
   font-size: 30px;
   line-height: 30px;
@@ -505,6 +505,9 @@ svg .login-icon-fill {
   text-transform: uppercase;
 
   background-color: #f3f7f8;
+  box-shadow:
+    10px 0 0 0 #ffffff inset,
+    -10px 0 0 0 #ffffff inset;
 }
 
 .promo {
@@ -1290,7 +1293,7 @@ svg .login-icon-fill {
 .popular-brands > .button {
   position: absolute;
   top: 25px;
-  right: 24px;
+  right: 34px;
 
   width: 252px;
 }
@@ -1832,7 +1835,8 @@ ul.promo-list-in-footer {
 
 .footer-in-footer .container {
   display: flex;
-  padding: 35px 0;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .footer-in-footer {
