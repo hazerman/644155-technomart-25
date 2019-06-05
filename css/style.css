@@ -226,6 +226,7 @@ input[type="search"]:focus {
 
 .footer-in-header {
   display: flex;
+  flex-wrap: wrap;
   flex-shrink: 0;
   margin-bottom: 43px;
 }
@@ -347,18 +348,23 @@ input[type="search"]:focus {
 
 .user-navigation {
   display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
   width: 281px;
   margin-left: 69px;
   justify-content: space-between;
 }
 
 .user-navigation a {
+  box-sizing: border-box;
   display: block;
   padding: 11px 24px;
+  max-width: 281px;
 
   font-size: 21px;
   line-height: 21px;
   color: #000000;
+  word-wrap: break-word;
 
   background-color: #ffffff;
 }
@@ -417,8 +423,10 @@ svg .login-icon-fill {
 .site-navigation a {
   display: block;
   padding: 21px 31px;
+  max-width: 190px;
 
   color: #ffffff;
+  word-wrap: break-word;
 }
 
 .site-navigation a:hover,
@@ -509,6 +517,7 @@ svg .login-icon-fill {
   box-sizing: border-box;
   margin-bottom: 20px;
   padding: 22px 25px;
+  padding-right: 110px;
 
   width: 300px;
   height: 123px;
@@ -521,6 +530,7 @@ svg .login-icon-fill {
 .promolist h3 {
   margin: 0;
   padding: 0;
+  width: 100%;
 
   font-size: 24px;
   line-height: 30px;
@@ -599,6 +609,9 @@ svg .login-icon-fill {
 
 .btn-in-promo {
   min-width: 135px;
+  max-width: 100%;
+
+  word-wrap: break-word;
 
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -1043,6 +1056,7 @@ svg .login-icon-fill {
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
+  max-width: 100%;
 
   font-size: 18px;
   line-height: 20px;
@@ -1050,6 +1064,8 @@ svg .login-icon-fill {
 
 .old-price,
 .price {
+  align-self: flex-end;
+
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -1065,6 +1081,7 @@ svg .login-icon-fill {
 
 .price {
   position: relative;
+
   margin: 0 auto;
   padding: 10px 30px;
 
@@ -1238,7 +1255,7 @@ svg .login-icon-fill {
 .popular-products h2,
 .popular-brands h2 {
   margin: 0;
-  padding: 33px 28px 35px;
+  padding: 33px 280px 35px 28px;
 
   font-size: 30px;
   line-height: 30px;
@@ -1254,7 +1271,7 @@ svg .login-icon-fill {
   top: 25px;
   right: 24px;
 
-  min-width: 252px;
+  width: 252px;
 }
 
 .brand-logo {
@@ -1270,6 +1287,11 @@ svg .login-icon-fill {
 
 .brand-logo li {
   margin-top: 20px;
+}
+
+.brand-link img {
+  max-width: 220px;
+  max-height: 143px;
 }
 
 .brand-link {
@@ -1327,6 +1349,9 @@ svg .login-icon-fill {
 }
 
 .services h3 {
+  position: relative;
+  z-index: 5;
+
   margin: 0;
   padding: 0;
   margin-bottom: 32px;
@@ -1481,6 +1506,10 @@ svg .login-icon-fill {
 
 .contacts {
   width: 300px;
+}
+
+.about-company .button {
+  max-width: 100%;
 }
 
 .delivery-companies {
