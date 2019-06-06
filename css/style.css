@@ -12,6 +12,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -301,7 +306,7 @@ input[type="search"]:focus {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  padding: 8px 49px 9px 71px;
+  padding: 8px 49px 9px 70px;
 
   font-size: 21px;
   line-height: 21px;
@@ -582,8 +587,7 @@ svg .login-icon-fill {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+
   padding-top: 59px;
   margin-bottom: 53px;
 
@@ -594,9 +598,7 @@ svg .login-icon-fill {
   position: relative;
 
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1158,6 +1160,8 @@ svg .login-icon-fill {
 
 .catalog-item .catalog-options {
   position: absolute;
+  top: 0;
+  left: 0;
 
   -webkit-box-sizing: border-box;
 
@@ -1165,9 +1169,6 @@ svg .login-icon-fill {
   width: 218px;
   height: 170px;
   padding: 43px 0;
-  -webkit-box-ordinal-group: -1;
-      -ms-flex-order: -2;
-          order: -2;
 
   background-color: #ffffff;
 }
