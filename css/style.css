@@ -1754,11 +1754,7 @@ svg .login-icon-fill {
   left: 50%;
   z-index: 1200;
 
-  display: -webkit-box;
-
-  display: -ms-flexbox;
-
-  display: flex;
+  display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -1779,6 +1775,12 @@ svg .login-icon-fill {
     0 -7px 0 0 #ff5358,
     0 20px 40px 0 rgba(0, 0, 0, 0.75),
     0 -112px 0 0 #f4f4f4 inset;
+}
+
+.modal-cart-add-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .modal-cart-add p {
@@ -1816,6 +1818,7 @@ svg .login-icon-fill {
   left: 50%;
   z-index: 1200;
 
+  display: none;
   margin-left: -470px;
   width: 940px;
   height: 446px;
@@ -1825,12 +1828,17 @@ svg .login-icon-fill {
           box-shadow: 0px 0px 16px 1.28px rgba(47, 42, 43, 0.5);
 }
 
+.modal-map-show {
+  display: block;
+}
+
 .modal-form {
   position: fixed;
   top: 50%;
   left: 50%;
   z-index: 1000;
 
+  display: none;
   -webkit-box-sizing: border-box;
 
           box-sizing: border-box;
@@ -1847,6 +1855,10 @@ svg .login-icon-fill {
     0 -7px 0 0 #ff5358,
     0 20px 40px 0 rgba(0, 0, 0, 0.75),
     0 -112px 0 0 #f4f4f4 inset;
+}
+
+.modal-form-show {
+  display: block;
 }
 
 .appeal-form {
@@ -2158,10 +2170,6 @@ a.current-in-pagination {
 
 a.current-in-arrow {
   border-bottom-color: #ee3643;
-}
-
-.modal {
-  display: none;
 }
 
 .visually-hidden {

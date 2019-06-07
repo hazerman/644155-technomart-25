@@ -276,14 +276,14 @@
                 <h3 class="visually-hidden">Форма обращения</h3>
                 <div class="label-input-wrapper">
                   <label for="name">Ваше имя:</label>
-                  <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+                  <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
                 </div>
                 <div class="label-input-wrapper">
                   <label for="email">Ваш e-mail:</label>
-                  <input type="email" name="email" id="email" placeholder="email@example.com">
+                  <input type="email" name="email" id="email" placeholder="email@example.com" required>
                 </div>
                 <label for="appeal">Текст письма:</label>
-                <textarea name="appeal" id="appeal" placeholder="В свободной форме"></textarea>
+                <textarea name="appeal" id="appeal" placeholder="В свободной форме" required></textarea>
                 <button class="button" type="submit">Отправить</button>
             </form>
             <button class="close-button" type="button"><span class="visually-hidden">Закрыть форму</span></button>
@@ -338,5 +338,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script-modal-form.js"></script>
   </body>
 </html>
