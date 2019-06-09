@@ -1846,8 +1846,27 @@ svg .login-icon-fill {
           box-shadow: 0px 0px 16px 1.28px rgba(47, 42, 43, 0.5);
 }
 
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
+}
+
+.modal-map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 940px;
+  height: 446px;
+}
+
 .modal-map-show {
   display: block;
+  animation-name: bounce;
+  animation-duration: 0.6s;
 }
 
 .modal-form {
@@ -1933,6 +1952,7 @@ svg .login-icon-fill {
   position: absolute;
   top: 9px;
   right: 9px;
+  z-index: 3;
 
   width: 21px;
   height: 21px;
