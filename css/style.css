@@ -209,7 +209,7 @@ input[type="search"]::placeholder {
 }
 
 .cart {
-  padding: 12px 10px 11px 48px;
+  padding: 12px 10px 12px 48px;
 }
 
 .cart::before {
@@ -244,6 +244,18 @@ input[type="search"]:hover,
 .tabs:active::before,
 .cart:active::before{
   opacity: 0.5;
+}
+
+.link-change-bg-color {
+  background-color: #ee3643;
+}
+
+.link-change-bg-color:hover {
+  background-color: rgba(238, 54, 67, 0.7);
+}
+
+.link-change-bg-color:active {
+  background-color: rgba(238, 54, 67, 0.5);
 }
 
 input[type="search"]:focus {
@@ -1748,21 +1760,46 @@ svg .login-icon-fill {
   width: 100%;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
 
   70% {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
 
   90% {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
 
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+ }
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
  }
 
@@ -1865,8 +1902,10 @@ svg .login-icon-fill {
 
 .modal-map-show {
   display: block;
-  animation-name: bounce;
-  animation-duration: 0.6s;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 .modal-form {
@@ -1896,8 +1935,10 @@ svg .login-icon-fill {
 
 .modal-form-show {
   display: block;
-  animation-name: bounce;
-  animation-duration: 0.6s;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 .appeal-form {
