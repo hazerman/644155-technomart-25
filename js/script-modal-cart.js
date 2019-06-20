@@ -1,21 +1,33 @@
-var buyLink = document.querySelector(".btn-buy");
-var tabsLink = document.querySelector(".btn-tabs");
+var buyLink = document.querySelectorAll(".btn-buy");
+var tabsLink = document.querySelectorAll(".btn-tabs");
 var cartAddPopup = document.querySelector(".modal-cart-add");
 var cartAddClose = cartAddPopup.querySelector(".close-button");
 var continueLink = cartAddPopup.querySelector(".btn-continue");
 var cartHeader = document.querySelector(".cart");
 var tabsHeader = document.querySelector(".tabs");
 
-buyLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  cartAddPopup.classList.add("modal-cart-add-show");
-  cartHeader.classList.add("link-change-bg-color");
-});
+var changeColorInCartHeader = function(buyLink) {
+    for(var i = 0; i < buyLink.length; i++) {
+        buyLink[i].addEventListener("click", function (evt) {
+          evt.preventDefault();
+          cartAddPopup.classList.add("modal-cart-add-show");
+          cartHeader.classList.add("link-change-bg-color");
+        });
+    }
+};
 
-tabsLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  tabsHeader.classList.add("link-change-bg-color");
-});
+changeColorInCartHeader(buyLink);
+
+var changeColorInTabsHeader = function(tabsLink) {
+    for(var i = 0; i < tabsLink.length; i++) {
+        tabsLink[i].addEventListener("click", function (evt) {
+          evt.preventDefault();
+          tabsHeader.classList.add("link-change-bg-color");
+        });
+    };
+};
+
+changeColorInTabsHeader(tabsLink);
 
 cartAddClose.addEventListener("click", function (evt) {
   evt.preventDefault();
