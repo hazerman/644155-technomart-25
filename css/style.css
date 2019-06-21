@@ -37,6 +37,7 @@ img {
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+  vertical-align: middle;
 
   background-color: #ee3643;
   border: none;
@@ -89,7 +90,7 @@ img {
 
 .main-header-logo,
 .footer-logo {
-  padding: 13px 57px 7px 55px;
+  padding: 13px 59px 7px 55px;
 
   background-color: #ee3643;
   -webkit-box-shadow: 0 5px 0 0 #b52933;
@@ -299,9 +300,9 @@ input[type="search"]:focus {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
-  margin-right: 20px;
+  margin-right: 15px;
   padding: 4px 55px 0 53px;
-  width: 300px;
+  width: 305px;
 
   font-style: italic;
   font-size: 16px;
@@ -323,6 +324,7 @@ input[type="search"]:focus {
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
+  text-decoration: none;
 
   background: url("../img/icon-phone.svg") 15px center no-repeat;
   border: 3px solid #ffffff;
@@ -590,20 +592,25 @@ svg .login-icon-fill {
     -10px 0 0 0 #ffffff inset;
 }
 
-.promo {
+.promo .container-minus-margin {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-
   padding-top: 59px;
   margin-bottom: 53px;
 
   color: #ffffff;
+}
+
+/*для ie11*/
+.container-minus-margin {
+  margin-left: -20px;
+}
+
+.container-minus-margin > * {
+  margin-left: 20px;
 }
 
 .promolist {
@@ -716,8 +723,8 @@ svg .login-icon-fill {
 
 /*временно*/
 .perforator.promo-slider,
-.credit-slider,
-.warranty-slider {
+.warranty-slider,
+.credit-slider {
   display: none;
 }
 
@@ -911,6 +918,8 @@ svg .login-icon-fill {
   border-radius: 50%;
   -webkit-box-shadow: 0 2px 1px 0 #e0ddd8;
           box-shadow: 0 2px 1px 0 #e0ddd8;
+
+  cursor: pointer;
 }
 
 .range-field .filter-button:first-of-type {
@@ -937,6 +946,8 @@ svg .login-icon-fill {
 .dash {
   display: inline-block;
   margin: 0 4px;
+
+  vertical-align: middle;
 }
 
 .input-range,
@@ -1084,6 +1095,7 @@ svg .login-icon-fill {
           text-decoration-style: dotted;
   -webkit-text-decoration-color: #ee3643;
           text-decoration-color: #ee3643;
+  vertical-align: middle;
 }
 
 .arrow {
@@ -1658,7 +1670,7 @@ svg .login-icon-fill {
   position: relative;
   z-index: 5;
 
-  width: 380px;
+  width: 375px;
 }
 
 .warranty-slider::after {
@@ -1805,7 +1817,7 @@ svg .login-icon-fill {
 
 .modal-cart-add {
   position: fixed;
-  top: 50%;
+  top: 200px;
   left: 50%;
   z-index: 1200;
 
@@ -1836,6 +1848,11 @@ svg .login-icon-fill {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 .modal-cart-add p {
@@ -1869,7 +1886,7 @@ svg .login-icon-fill {
 
 .modal-map {
   position: fixed;
-  top: 50%;
+  top: 200px;
   left: 50%;
   z-index: 1200;
 
@@ -1910,7 +1927,7 @@ svg .login-icon-fill {
 
 .modal-form {
   position: fixed;
-  top: 50%;
+  top: 150px;
   left: 50%;
   z-index: 1000;
 
@@ -2046,6 +2063,7 @@ svg .login-icon-fill {
   color: #ffffff;
 
   background-color: #32425c;
+  box-shadow: 0px 1px 0px 0px #32425c; /*минус белая полоса в edge, ie11*/
 }
 
 .header-in-footer .container {
@@ -2134,7 +2152,9 @@ ul.promo-list-in-footer {
 .address-telephone-in-footer {
   width: 330px;
   margin-top: 32px;
+
   font-style: normal;
+  text-decoration: none;
 }
 
 .footer-in-footer .container {
@@ -2142,7 +2162,7 @@ ul.promo-list-in-footer {
   display: -ms-flexbox;
   display: flex;
   padding-top: 35px;
-  padding-bottom: 35px;
+  padding-bottom: 32px;
 }
 
 .footer-in-footer {
@@ -2154,11 +2174,11 @@ ul.promo-list-in-footer {
 
 .footer-copyright {
   margin: 0;
-  margin-right: 20px;
   padding: 0;
 }
 
 .footer-copyright:first-child {
+  flex-shrink: 0;
   width: 240px;
 }
 
@@ -2175,15 +2195,24 @@ ul.footer-social-list {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 135px;
-  margin-left: 140px;
+  flex-shrink: 0;
+  width: 130px;
+  margin-left: 150px;
   margin-right: 120px;
+}
+
+.footer-social-list li {
+  margin-right: 5px;
+}
+
+.footer-social-list li:nth-child(3) {
+  margin-right: 0;
 }
 
 .social-button {
   display: block;
-  width: 41px;
-  height: 41px;
+  width: 40px;
+  height: 40px;
 
   color: #ffffff;
 
