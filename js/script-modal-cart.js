@@ -6,28 +6,21 @@ var continueLink = cartAddPopup.querySelector(".btn-continue");
 var cartHeader = document.querySelector(".cart");
 var tabsHeader = document.querySelector(".tabs");
 
-var changeColorInCartHeader = function(buyLink) {
-    for(var i = 0; i < buyLink.length; i++) {
-        buyLink[i].addEventListener("click", function (evt) {
-          evt.preventDefault();
-          cartAddPopup.classList.add("modal-cart-add-show");
-          cartHeader.classList.add("link-change-bg-color");
-        });
-    }
+
+for(var i = 0; i < buyLink.length; i++) {
+    buyLink[i].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      cartAddPopup.classList.add("modal-cart-add-show");
+      cartHeader.classList.add("link-change-bg-color");
+    });
 };
 
-changeColorInCartHeader(buyLink);
-
-var changeColorInTabsHeader = function(tabsLink) {
-    for(var i = 0; i < tabsLink.length; i++) {
-        tabsLink[i].addEventListener("click", function (evt) {
-          evt.preventDefault();
-          tabsHeader.classList.add("link-change-bg-color");
-        });
-    };
+for(var i = 0; i < tabsLink.length; i++) {
+    tabsLink[i].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      tabsHeader.classList.add("link-change-bg-color");
+    });
 };
-
-changeColorInTabsHeader(tabsLink);
 
 cartAddClose.addEventListener("click", function (evt) {
   evt.preventDefault();
