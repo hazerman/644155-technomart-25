@@ -774,12 +774,6 @@ svg .login-icon-fill {
   background-color: #ee3643;
   border-radius: 50%;
 }
-/*временно*/
-
-.warranty-slider,
-.credit-slider {
-  display: none;
-}
 
 .btn-in-promo {
   min-width: 135px;
@@ -1701,7 +1695,12 @@ svg .login-icon-fill {
 .services-slider {
   position: relative;
 
+  display: none;
   width: 620px;
+}
+
+.show-services-slider {
+  display: block;
 }
 
 .delivery-slider p {
