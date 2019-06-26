@@ -544,29 +544,29 @@ svg .login-icon-fill {
   text-transform: uppercase;
 }
 
-.technomart-nav a {
+.technomart-nav-list a {
   display: block;
   color: #000000;
 }
 
-.technomart-nav li {
+.technomart-nav-list {
   margin-right: 30px;
   padding-left: 10px;
 
   list-style-image: url("../img/icon-right-small.svg");
 }
 
-.technomart-nav li:first-child {
+.technomart-nav-list:first-child {
   padding-left: 0;
 
   list-style: none;
 }
 
-.technomart-nav li:last-child {
+.technomart-nav-list:last-child {
   margin-right: 0;
 }
 
-.technomart-nav li:first-child a {
+.technomart-nav-list:first-child a {
   width: 15px;
   height: 12px;
 
@@ -579,6 +579,7 @@ svg .login-icon-fill {
   padding: 30px 38px 29px 38px;
   margin-bottom: 19px;
 
+  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
@@ -790,7 +791,7 @@ svg .login-icon-fill {
 
   word-wrap: break-word;
 
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .btn-in-promo:hover,
@@ -799,7 +800,7 @@ svg .login-icon-fill {
 }
 
 .btn-in-promo:active {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .materials {
@@ -1300,7 +1301,7 @@ svg .login-icon-fill {
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
-  color: #999999;
+  color: #a9a9a9;
   text-decoration: line-through;
 }
 
@@ -1499,6 +1500,7 @@ svg .login-icon-fill {
   margin: 0;
   padding: 31px 280px 28px 28px;
 
+  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
@@ -1598,6 +1600,7 @@ svg .login-icon-fill {
   padding: 0;
   margin-bottom: 28px;
 
+  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   color: #000000;
@@ -1613,9 +1616,9 @@ svg .login-icon-fill {
   margin-bottom: 32px;
   padding: 0;
 
-
+  font-weight: normal;
   font-size: 36px;
-  line-height: 24px;
+  line-height: 36px;
   color: #32425c;
   text-transform: uppercase;
 }
@@ -2188,7 +2191,7 @@ ul.promo-list-in-footer {
 }
 
 .footer-navigation a {
-  color: #ffffff;
+  color: #f1f5f7;
 }
 
 .promo-list-in-footer a {
@@ -2220,6 +2223,7 @@ ul.promo-list-in-footer {
 
   font-style: normal;
   text-decoration: none;
+  color: #f1f5f7;
 }
 
 .footer-in-footer .container {
