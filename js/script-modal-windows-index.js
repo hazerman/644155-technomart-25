@@ -1,17 +1,24 @@
 var formLink = document.querySelector(".contacts .button");
 var mapLink = document.querySelector(".map-button");
+
 var buyLink = document.querySelectorAll(".btn-buy");
 var tabsLink = document.querySelectorAll(".btn-tabs");
+
 var formPopup = document.querySelector(".modal-form");
 var mapPopup = document.querySelector(".modal-map");
 var cartAddPopup = document.querySelector(".modal-cart-add");
+
 var formClose = formPopup.querySelector(".close-button");
 var mapClose = mapPopup.querySelector(".close-button");
 var cartAddClose = cartAddPopup.querySelector(".close-button");
 var continueLink = cartAddPopup.querySelector(".btn-continue");
+
 var cartHeader = document.querySelector(".cart");
 var tabsHeader = document.querySelector(".tabs");
-var focusName = mapPopup.querySelector("[name=name]");
+
+var focusName = formPopup.querySelector("[name=name]");
+var form = formPopup.querySelector(".appeal-form");
+console.log(form);
 
 formLink.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -23,6 +30,10 @@ formClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   formPopup.classList.remove("modal-form-show");
 });
+
+form.addEventListener("submit", function (evt) {
+  evt.preventDefault();
+})
 
 mapLink.addEventListener("click", function (evt) {
   evt.preventDefault();

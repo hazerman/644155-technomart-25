@@ -1839,6 +1839,8 @@ a.main-header-logo:active {
 }
 
 .map-button {
+  display: block;
+
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
