@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap" rel="stylesheet">
     <link href="css/normalize.mini.css" rel="stylesheet">
@@ -287,14 +288,14 @@
                 <h3 class="visually-hidden">Форма обращения</h3>
                 <div class="label-input-wrapper">
                   <label for="name">Ваше имя:</label>
-                  <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
+                  <input type="text" name="name" id="name" placeholder="Имя Фамилия" autofocus>
                 </div>
                 <div class="label-input-wrapper">
                   <label for="email">Ваш e-mail:</label>
-                  <input type="email" name="email" id="email" placeholder="email@example.com" required>
+                  <input type="email" name="email" id="email" placeholder="email@example.com">
                 </div>
                 <label for="appeal">Текст письма:</label>
-                <textarea name="appeal" id="appeal" placeholder="В свободной форме" required></textarea>
+                <textarea name="appeal" id="appeal" placeholder="В свободной форме"></textarea>
                 <button class="button" type="submit">Отправить</button>
             </form>
             <button class="close-button" type="button"><span class="visually-hidden">Закрыть форму</span></button>
