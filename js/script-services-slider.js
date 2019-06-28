@@ -1,11 +1,11 @@
-var mainWrapperServices = document.querySelector('.services-slider-wrapper');
-var linksServices = mainWrapperServices.querySelectorAll('.services-list a');
-var slidesServices = mainWrapperServices.querySelectorAll('.services-slider');
+var mainWrapperServices = document.querySelector(".services-slider-wrapper");
+var linksServices = mainWrapperServices.querySelectorAll(".services-list a");
+var slidesServices = mainWrapperServices.querySelectorAll(".services-slider");
 
 var findCurrentLinkAndSlide = function () {
   var curLink = 0;
   for (var i = 0; i < linksServices.length; i++) {
-    if (linksServices[i].className === 'current-in-services') {
+    if (linksServices[i].className === "current-in-services") {
       curLink = i;
     }
   }
@@ -13,7 +13,7 @@ var findCurrentLinkAndSlide = function () {
 }
 
 var changeSlide = function (link, slide) {
-  link.addEventListener('click', function (evt) {
+  link.addEventListener("click", function (evt) {
     evt.preventDefault();
     var currentLinkAndSlide = findCurrentLinkAndSlide();
 
